@@ -5,6 +5,31 @@
 
 {% endblock title %} {% block body %}
 <div class="home-page">
-    
+    <div class="home-img">
+        <img src="../static/images/bus-stop.svg" alt="bus-stop">
+    </div>
+    <div class="login-content">
+        <div class="login-form">
+            <h2>
+                Sign In
+            </h2>
+            <form action="" method="post">
+                <div class="user-email-info">
+                    <label for="user-email">Email</label>
+                    <input type="text" name="user-email" id="user-email" placeholder="johndoe@example.com">
+                </div>
+                <div class="user-password-info">
+                    <label for="user-password">Password</label>
+                    <input type="text" name="user-password" id="user-password" placeholder="***********">
+                </div>
+                <div class="auth-btn-holder">
+                    <div class="auth-btn">
+                        Sign In
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </div>
 </div>
 {% endblock body %}
