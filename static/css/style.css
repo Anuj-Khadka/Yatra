@@ -71,6 +71,11 @@ a{
     padding: 10px 15px;
 }
 
+.input-field{
+    display: flex;
+    flex-direction: column;
+}
+
 .login-form h2 {
     margin-bottom: 20px;
     text-align: center;
