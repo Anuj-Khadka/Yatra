@@ -108,10 +108,7 @@ a {
   flex-direction: column;
 }
 
-.login-form .user-email-info,
-.login-form .user-password-info,
-.signup-content .user-email-info,
-.signup-content .user-password-info {
+.input-field{
   margin-bottom: 15px;
 }
 
@@ -176,6 +173,13 @@ input:focus {
     width: 35%;
 }
 
+
+.user-name{
+  /* background: red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
 @media (max-width: 750px) {
   .home-page {
