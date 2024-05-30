@@ -13,25 +13,46 @@
             <h2>
                 Sign In
             </h2>
-            <form action="" method="post" class="auth-form">
-                <div class="user-email-info input-field">
-                    <label for="user-email">Email</label>
-                    <input type="text" name="user-email" id="user-email" placeholder="johndoe@example.com">
-                </div>
-                <div class="user-password-info input-field">
-                    <label for="user-password">Password</label>
-                    <input type="text" name="user-password" id="user-password" placeholder="***********">
-                </div>
-                <div class="auth-btn-holder">
-                    <div class="auth-btn">
-                        Sign In
-                    </div>
-                </div>
+            <div class="sign-in-form">
 
-            </form>
+                <form action="" method="post" class="auth-form">
+                    <div class="user-email-info input-field">
+                        <label for="user-email">Email</label>
+                        <div class="inner-input-field">
+
+                            <input type="text" name="user-email" id="user-email" placeholder="johndoe@example.com">
+                        </div>
+                    </div>
+                    <div class="user-password-info input-field">
+                        <label for="user-password">Password</label>
+                        <div class="inner-input-field">
+
+                            <input type="password" name="user-password" id="user-password" placeholder="***********">
+                            <div class="pass-eye">
+                                <div class="open-eye" id="open-eye">
+                                    <img src="../static/images/eye-open.svg" alt="eye">
+                                </div>
+                                <div class="close-eye  hide-eye" id="close-eye">
+                                    <img src="../static/images/eye-closed.svg" alt="eye">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="auth-btn-holder">
+                        <div class="auth-btn">
+                            Sign In
+                        </div>
+                    </div>
+                    
+                </form>
+            </div>
             <div class="other-option">
                 Do not have an account yet? <span class="signup-opt">
-                    Sign up
+                    <a href="/signup">
+                        <b>
+                            Sign up
+                        </b>
+                    </a>
                 </span>
             </div>
         </div>

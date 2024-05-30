@@ -11,6 +11,9 @@ def index():
 def test_static():
     return f'<link rel="stylesheet" href="{url_for("static", filename="css/style.css")}"> Static file test.'
 
+@app.route('/signup')
+def signup():
+    return render_template('signup.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
