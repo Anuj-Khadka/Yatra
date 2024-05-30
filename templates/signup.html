@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+<title>Yatra | Signup Page Page</title>
+
+{% endblock title %} {% block body %}
+    <div class="signup-page">
+        <div class="signup-content">
+            <h2>Sign Up</h2>
+            <div class="sign-up-form">
+                
+                <form action="" method="post" class="auth-form">
+                    <div class="user-email-info input-field">
+                        <label for="user-email">Email</label>
+                        <div class="inner-input-field">
+                            
+                        <input type="text" name="user-email" id="user-email" placeholder="johndoe@example.com">
+                    </div>
+                </div>
+                <div class="user-password-info input-field">
+                    <label for="user-password">Password</label>
+                    <div class="inner-input-field">
+                        
+                        <input type="password" name="user-password" id="user-password" placeholder="***********">
+                        <div class="pass-eye">
+                            <div class="open-eye" id="open-eye">
+                                <img src="../static/images/eye-open.svg" alt="eye">
+                            </div>
+                            <div class="close-eye  hide-eye" id="close-eye">
+                                <img src="../static/images/eye-closed.svg" alt="eye">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="auth-btn-holder">
+                    <div class="auth-btn">
+                        Sign In
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+        <div class="other-option">
+            Already have an account? <span class="signup-opt">
+                <a href="/signup">
+                    <b>
+                        Sign In
+                    </b>
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+
+{% endblock body %}
