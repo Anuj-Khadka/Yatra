@@ -196,6 +196,10 @@ input:focus {
   align-items: center;
 }
 
+.yatra-service-block span{
+  margin-right: 10px;
+}
+
 @media (max-width: 750px) {
   .home-page {
     flex-direction: column;
