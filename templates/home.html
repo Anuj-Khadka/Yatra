@@ -1,40 +1,38 @@
-{% extends 'layout.html' %}
-
-{% block title %}
+{% extends 'layout.html' %} {% block title %}
 <title>Yatra | Home Page</title>
 
 {% endblock title %} {% block body %}
 <div class="home-page">
-    <div class="home-img">
-        <img src="../static/images/bus-stop.svg" alt="bus-stop">
+  <div class="home-img">
+    <img src="../static/images/bus-stop.svg" alt="bus-stop" />
+  </div>
+  <div class="home-content">
+    <div class="yatra-service-blocks">
+      <div class="yatra-service-block">
+        <span>
+          <i class="fa-solid fa-bus"></i>
+        </span>
+        My Bus
+      </div>
+      <div class="yatra-service-block">
+        <span>
+          <i class="fa-solid fa-ticket"></i>
+        </span>
+        Buy Ticket
+      </div>
+      <div class="yatra-service-block">
+        <span>
+          <i class="fa-solid fa-gear"></i>
+        </span>
+        Setting
+      </div>
+      <div class="yatra-service-block">
+        <span>
+          <i class="fa-solid fa-user"></i>
+        </span>
+        Profile
+      </div>
     </div>
-    <div class="home-content">
-        <div class="yatra-service-blocks">
-            <div class="yatra-service-block">
-                <span>
-                    <i>B</i>
-                </span>
-                My Bus
-            </div>
-            <div class="yatra-service-block">
-                <span>
-                <i>B</i>
-            </span>
-                Buy Ticket
-            </div>
-            <div class="yatra-service-block">
-                <span>
-                <i>B</i>
-            </span>
-                Setting
-            </div>
-            <div class="yatra-service-block">
-                <span>
-                <i>B</i>
-            </span>
-                Profile
-            </div>
-        </div>
-    </div>
+  </div>
 </div>
 {% endblock body %}
